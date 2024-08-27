@@ -18,43 +18,35 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="header__container">
-        <h1 class="header__logo">&lt;/HTML&gt;</h1>
-        <h2 class="header__title">Закрывающий тег</h2>
-        <nav class="theme-menu header__theme-menu">
-          <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
-          <ul class="theme-menu__list">
-            <li class="theme-menu__item">
-              <button
-                type="button"
-                data-theme="dark"
-                class="theme-menu__button"
-              >
-                Темно
-              </button>
-            </li>
-            <li class="theme-menu__item">
-              <button
-                type="button"
-                data-theme="auto"
-                disabled
-                class="theme-menu__button"
-              >
-                Авто
-              </button>
-            </li>
-            <li class="theme-menu__item">
-              <button
-                type="button"
-                data-theme="light"
-                class="theme-menu__button"
-              >
-                Светло
-              </button>
-            </li>
-          </ul>
-        </nav>
+      <div class="header__logo">
+        <a class="header__logo-link" href="#">&lt;/HTML&gt;</a>
       </div>
+      <h1 class="header__title">Закрывающий тег</h1>
+      <nav class="theme-menu header__theme-menu">
+        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
+        <ul class="theme-menu__list">
+          <li class="theme-menu__item">
+            <button type="button" data-theme="dark" class="theme-menu__button">
+              Темно
+            </button>
+          </li>
+          <li class="theme-menu__item">
+            <button
+              type="button"
+              data-theme="auto"
+              disabled
+              class="theme-menu__button"
+            >
+              Авто
+            </button>
+          </li>
+          <li class="theme-menu__item">
+            <button type="button" data-theme="light" class="theme-menu__button">
+              Светло
+            </button>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="cards">
@@ -67,7 +59,8 @@
             <img
               class="card__image"
               src="./images/gena.jpeg"
-              alt="crocodile gena"
+              alt="крокодил гена"
+              loading="lazy"
             />
           </div>
           <div class="card__text-container">
@@ -81,7 +74,7 @@
             </p>
           </div>
           <div class="card__like-container">
-            <button type="button" class="card__icon-button">
+            <button type="button" class="card__icon-button" aria-label="лайк">
               <svg
                 class="like-icon"
                 viewBox="0 0 39 36"
@@ -128,7 +121,8 @@
             <img
               class="card__image saturation"
               src="./images/karlson.jpeg"
-              alt="karlson"
+              alt="карлсон"
+              loading="lazy"
             />
           </div>
           <div class="card__text-container">
@@ -191,7 +185,8 @@
             <img
               class="card__image grayscale"
               src="./images/kesha.jpeg"
-              alt="parrot kesha"
+              alt="попугай кеша"
+              loading="lazy"
             />
           </div>
           <div class="card__text-container">
@@ -253,7 +248,8 @@
             <img
               class="card__image hue-rotate"
               src="./images/leopold.jpeg"
-              alt="cat leopold"
+              alt="кот леопольд"
+              loading="lazy"
             />
           </div>
           <div class="card__text-container">
@@ -317,7 +313,8 @@
             <img
               class="card__image invert"
               src="./images/matroskin.jpeg"
-              alt="cat matroskin"
+              alt="кот матроскин"
+              loading="lazy"
             />
           </div>
           <div class="card__text-container">
@@ -382,7 +379,8 @@
             <img
               class="card__image sepia"
               src="./images/ezhik.jpeg"
-              alt="hedgehog in fog"
+              alt="ёжик в тумане"
+              loading="lazy"
             />
           </div>
           <div class="card__text-container">
@@ -443,7 +441,8 @@
             <img
               class="card__image blur"
               src="./images/bremen-musicians.jpeg"
-              alt="bremen musicians"
+              alt="бременские музыканты"
+              loading="lazy"
             />
           </div>
           <div class="card__text-container">
@@ -506,7 +505,8 @@
             <img
               class="card__image multi-filter"
               src="./images/winnie.jpeg"
-              alt="winnie the pooh"
+              alt="винни пух"
+              loading="lazy"
             />
           </div>
           <div class="card__text-container">
@@ -567,7 +567,7 @@
       </section>
     </main>
     <script src="./scripts/like.js"></script>
-    <footer class="footer">
+    
       <button
         class="save-button button"
         type="button"
@@ -579,7 +579,7 @@
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-    </footer>
+   
     <dialog id="dialog" class="modal">
       <div class="modal__description">
         <svg class="modal__floppy floppy" viewBox="0 0 21 21">
@@ -590,10 +590,10 @@
       <form method="dialog">
         <button
           type="button"
-          class="save-button modal__button button"
+          class="modal__button button"
           onclick="window['dialog'].close()"
         >
-          <span class="button__text">Ок</span>
+          <span class="button__text">ОK</span>
         </button>
       </form>
     </dialog>
