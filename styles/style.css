@@ -284,12 +284,13 @@
 }
 
 @supports (
-  (text-stroke: 1px var(--label-stroke-color)) or
+  /* THROWS A CSS VALIDATION ERROR */
+  /* (text-stroke: 1px var(--label-stroke-color)) or */
     (-webkit-text-stroke: 1px var(--label-stroke-color))
 ) {
   .card__image-label {
     -webkit-text-stroke: 1px var(--label-stroke-color);
-    text-stroke: 1px var(--label-stroke-color);
+    /* text-stroke: 1px var(--label-stroke-color); */
     text-shadow: none;
   }
 }
