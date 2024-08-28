@@ -1,3 +1,17 @@
+.sparks {
+  opacity: 0;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s 0.05s linear;
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
 .like-icon .contour,
 .like-icon:hover .main-body,
 .like-icon:hover .core {

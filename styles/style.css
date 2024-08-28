@@ -383,22 +383,6 @@
   block-size: inherit;
 }
 
-/* svg parts */
-
-.sparks {
-  opacity: 0;
-}
-
-.main-body {
-  fill: transparent;
-  transition: fill 0.3s 0.05s linear;
-}
-
-.core {
-  fill: transparent;
-  transition: fill 0.3s linear;
-}
-
 /* save button area */
 
 .save-button {
@@ -433,11 +417,6 @@
   inline-size: clamp(21.313rem, 1.502vw + 20.96rem, 22.313rem);
 }
 
-@media screen and (width <= 375px) {
-  .modal {
-  }
-}
-
 .modal::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
 }
@@ -463,6 +442,10 @@
   font-family: var(--accent-font);
   inline-size: clamp(16.063rem, 3.38vw + 15.27rem, 18.313rem);
   block-size: 38px;
+}
+
+.modal__button-text {
+  text-transform: uppercase;
 }
 
 .floppy {
